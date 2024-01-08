@@ -25,4 +25,4 @@ COPY --from=builder --chown=webuser:webgroup /var/www/html/vendor /var/www/html/
 # Re-run install, but now with scripts and optimizing the autoloader (should be faster)...
 RUN composer install --no-interaction --prefer-dist --optimize-autoloader
 
-ENTRYPOINT ["/var/www/html/resources/docker/entrypoint.sh"]
+ENTRYPOINT ["/var/www/html/resources/docker/php/entrypoint.sh"]
