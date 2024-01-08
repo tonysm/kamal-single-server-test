@@ -49,8 +49,8 @@ accessories:
     env:
       clear:
         MYSQL_ROOT_HOST: '%'
-        MYSQL_DATABASE: 'kamalapp'
       secret:
+        - MYSQL_DATABASE
         - MYSQL_ROOT_PASSWORD
     files:
       # - resources/docker/mysql/custom.cnf:/etc/mysql/my.cnf
