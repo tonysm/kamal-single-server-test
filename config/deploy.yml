@@ -21,6 +21,7 @@ env:
     APP_DEBUG: false
     APP_URL: "http://laravel-kamal-test.com"
     ASSET_URL: "http://laravel-kamal-test.com"
+    DB_CONNECTION: "mysql"
     LOG_CHANNEL: "stderr"
     LOG_DEPRECATIONS_CHANNEL: "null"
     LOG_LEVEL: "debug"
@@ -72,5 +73,5 @@ healthcheck:
 # Bridge fingerprinted assets, like JS and CSS, between versions to avoid
 # hitting 404 on in-flight requests. Combines all files from new and old
 # version inside the asset_path.
-asset_path: /var/www/html/public/dist
+asset_path: /var/www/html/public/build
 
